@@ -8,14 +8,26 @@ If they're equal, return either one.
 Exercise 1 has been completed for you:
 */
 
-const maxOfTwoNumbers = (x, y) => {
-    if (x >= y) {
-      return x;
-    } else {
-      return y;
-    }
-  }
+// const maxOfTwoNumbers = (x, y) => {
+//     if (x >= y) {
+//       return x;
+//     } else {
+//       return y;
+//     }
+//   }
   
-  console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 9));
+//   console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 9));
 
   
+
+  function isAdult(age){
+    if (age <= 17){
+        return `You are ${age} years old so you are a Minor.`
+    } else{
+        return`You are ${age} years old so you are an Adult.`
+    }
+  };
+
+
+
+  console.log(isAdult(15))
