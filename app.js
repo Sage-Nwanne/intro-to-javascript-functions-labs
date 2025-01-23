@@ -135,10 +135,6 @@ function convertTemperature(tempNumber, celsiusOrFahrenheit){
 console.log(convertTemperature(32,"C"));
 
 
-
-
-
-
 //=================== Exercise 9: basicCalculator() =======================
 
 // Create a function named basicCalculator. 
@@ -150,3 +146,18 @@ console.log(convertTemperature(32,"C"));
 // second parameter as the second operand.
 
 
+function basicCalculator(numb1, operationCommand, numb2){
+    if (operationCommand === 'add'){
+        return numb1 + numb2;
+    } else if ( operationCommand === 'subtract'){
+        return numb1 - numb2;
+    } else if ( operationCommand === 'multiply'){
+        return numb1 * numb2;
+    } else if (operationCommand === 'divide'){
+        return numb1 / numb2;
+    } else {
+        console.log('inoperable operation....')
+    }
+};
+
+console.log (basicCalculator(95, 'add', 5));
